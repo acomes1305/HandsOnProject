@@ -1,0 +1,296 @@
+/* Global styles */
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #d1e0e0;
+    background-image: url('');
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    line-height: 1.9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* For the dark mode function*/
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  .dark-mode a {
+    /* Styling links in dark mode */
+    color: lightblue;
+    /* Example link color in dark mode */
+  }
+  
+  .dark-mode button {
+    /* Styling buttons in dark mode */
+    background-color: grey;
+    color: white;
+  }
+  
+  /* Add design to button */
+  .theme-button {
+    text-decoration: underline;
+    /* Add underline to the button text */
+    background-color: gray;
+    font-family: Arial, sans-serif;
+    /* Change the font of the text */
+    color: bold black;
+    /* Change the text color */
+    padding: 10px 20px;
+    /* Add padding to increase the surface area */
+    border: radius 25%;
+    /* Change the border to dotted and red */
+  }
+  
+  /* Navigation styles */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #535850;
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    padding: 0 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .navbar a:hover {
+    background-color: #4e4e4e;
+    border-radius: 5px;
+  }
+  
+  /* Flex container styles */
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Button styles */
+  /* Title styles */
+  .nav-button,
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title-section {
+    flex-basis: calc(33.333% - 10px);
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  .passage {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+  }
+  
+  /* Hover effects */
+  .description:hover {
+    color: darkgreen;
+  }
+  
+  .teen:hover {
+    color: #14e6cd;
+  }
+  
+  .about:hover {
+    color: #a12121;
+  }
+  
+  .A:hover {
+    color: darkslateblue;
+  }
+  
+  /* ID selectors */
+  #my-id {
+    font-style: serif;
+    text-decoration: #a19891;
+  }
+  
+  #header-img,
+  #data-img {
+    max-width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+  }
+  
+  #data img {
+    width: 200px;
+  }
+  
+  
+  
+  /* About the petition form */
+  
+  .petition-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .call-to-action,
+  .signatures {
+    width: 50%;
+    margin: 0 10px;
+  
+  
+    .petition-form>.call-to-action {
+      text-align: left;
+      /* Align the text to the left for call to action */
+    }
+  
+    .petition-form>.signatures {
+      text-align: right;
+      /* Align the text to the right for signatures */
+    }
+  
+    .form-container {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      line-height: 1.9;
+      margin: 20px;
+      padding: 10px;
+    }
+  
+    .invalid {
+      border: 2px solid red;
+    }
+  
+    .notice {
+      display: flex;
+      justify-content: felx-end;
+    }
+  
+  }
+  
+  /* Modal styles */
+  .modal {
+    position: fixed;
+    /* Corrected for modals */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+  
+  .animated-image {
+    width: 100px;
+    animation: rotateImage 2s infinite;
+  }
+  
+  /*  Reduced motion settings*/
+  body.reduce-motion .animated-image,
+  body.reduce-motion .fade-in-section {
+    animation: none;
+    transition: none;
+  }
+  
+  @keyframes rotateImage {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .fade-in-section {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  
+  
+  
+  /* Footer styles */
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #535850;
+    color: green;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 600px) {
+    .title-row {
+      flex-direction: column;
+    }
+  
+    .title-section {
+      flex-basis: 100%;
+      margin: 5px 0;
+    }
+  }
+
+  this is it'
+
+  
